@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:p="http://www.springframework.org/schema/p"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- <bean id="HelloBean" class="com.cg.first.HelloBean">
+<property name="name" value="YOU"/> -->
+
+<bean id="e" class="com.cg.first.Employee">  
+<constructor-arg value="10" type="int">
+</constructor-arg>  
+</bean>  
+
+<!-- Injecting string-based values -->
+<bean id="e1" class="com.cg.first.Employee">  
+<constructor-arg value="10"></constructor-arg>  
+</bean>  
+
+
+<!-- pass the string literal -->
+<bean id="e2" class="com.cg.first.Employee">  
+<constructor-arg value="Navya"></constructor-arg>  
+</bean>  
+
+<!-- pass integer literal and string -->
+<bean id="e3" class="com.cg.first.Employee">  
+<constructor-arg value="40" type="int" ></constructor-arg>  
+<constructor-arg value="Sonu"></constructor-arg>  
+</bean>  
+</beans>
